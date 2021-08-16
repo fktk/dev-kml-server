@@ -7,8 +7,10 @@ Reload your developing kml-file automatically on Google Earth.
 
 ## Usage
 
-1. `npm install fktk/dev-kml-server`
-2. Edit href content in ./server-file/server.kml
+1. `git clone https://github.com/fktk/dev-kml-server`
+2. `cd dev-kml-server`
+3. `npm install`
+4. Edit href content in ./server-file/server.kml
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -30,10 +32,10 @@ HERE!   <href>https://YOUR_LOCAL_IP_ADDRESS:PORT/YOUR_KML_FILE.kml</href>
 </kml>
 ```
 
-3. `npm run start -- --host=YOUR_LOCAL_IP_ADDRESS --port=PORT`
-4. Open [Google Earth](https://earth.google.com/web/) and upload server.kml file from New Project.
-5. Edit /kml-file/YOUR_KML_FILE.kml. Then feature's location will be updated.
-6. Push the feature's name you edited on Google Earth. Then camera view will be updated.
+5. `npm run start -- --host=YOUR_LOCAL_IP_ADDRESS --port=PORT`
+6. Open [Google Earth](https://earth.google.com/web/) and upload server.kml file from New Project.
+7. Edit /kml-file/YOUR_KML_FILE.kml and save it. Then feature's location will be updated.
+8. Push the feature's name you edited on Google Earth. Then camera view will be updated.
 
 That's enough for my use case😊
 
